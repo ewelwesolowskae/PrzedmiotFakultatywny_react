@@ -1,0 +1,111 @@
+tekst
+("tekst123")
+tekst.includes('st');
+true
+let zmienna = 'hello world';
+
+zmienna.split(' '); #wartosc po ktorej dzielic string, w tym przypadku spacja
+zmienna.trim(); #wycina biale znaki na poczatku albo koncu
+zmienna.toUpperCase(); #podnosi do WIELKICH LITER
+zmienna.toLowerCase(); #ROBI Z WIELKICH LITER male litery
+zmienna = 'kota';
+'ala ma' + zmienna;
+console.log('ala ma ' +zmienna);
+'ala ma ${zmienna}';
+
+# liczby
+
+let number = 2.5;
+let number = 1;
+#let ma swoje limity wielkosci (duze liczby i liczby po przecinku)
+const x = new Number(10);
+const y = 10; 
+x === y;
+false
+x == y;
+true
+ # porownanie typów liczb (przy == przekonwertuje i wyjdzie true
+Number.isFinite(120); True # sprawdza czy sie kiedys konczy
+Number.isFinite(1/0); False
+let liczba = 1.123456;
+liczba.toFixed(2); # 1.12
+liczba.toFixed(4); # 1.1235
+
+  #stale matematyczne
+Math.E
+Math.PI
+  
+
+Math.floor(3.1415) # 3
+Math.pow(2,4) # 16
+Math.random(); #randomowa liczba od 0 do 1
+
+#wartosc boolowska czyli true false albo 0 1
+let boolean = true; #boolean jest nazwa zmiennej
+Boolean(false); #sprawdzanie czy cos jest booleanem
+Boolean({}); # true
+
+  #tablice
+let tablica = [1,2,3,4,5,'six',true];
+tablica.lenght
+
+if(tablica.length){console.log('test')}
+
+tablica.join() # skleja wszystkie wartosci tablicy w jedną
+const tablica2 =tablica.map((wartosc,index)=>{return wartosc+index}); # mapowanie słozy do zmieniania zawartosci tablicy, for sluzy do przechodzenia przez tablice i niekoniecznie zmienianie tablicy
+
+tablica.forEach((wartosc)=>{console.log(wartosc)}); #sprawdza wartosci po kolei 
+
+tablica[0] = 10 #pierwszy element jest rowny 10 mozna tez podmieniac na string itd
+
+#obiekt
+let obiekt = 
+{
+  autor: 'Jan Kowalski'
+  tytul: 'Ksiegi Jana'
+};
+
+
+  #funkcja
+function test(){} #funkcja nazwana
+const test = function(){} #referencja do funkcji
+function funkcja(parametr){return xyz}
+const funckcja =(parametr)=>{return parametr}
+const funcja2 =(parametr)=> parametr;
+let funkcja3 = (parametr)=>(parametr); #jezeli nie w jednej lini
+#zwracanie obiektow
+funkcja3 =(parametr)=>({obiekt:parametr});
+
+  #switch case
+let zmienna = 10;
+switch(zmienna){
+  case 0:
+  //kod;
+  break;
+  case 1:
+  //kod;
+  break;
+  // kod domyslny ktory ma sie wykonac w razie jakby nie bylo takie case;
+}
+
+// petla
+for (let index = 0; index < tablica.lenght; index++)
+{
+console.log();
+}
+
+for(let index in obiekt){
+console.log(index);
+console.log(obiekt[index]);
+}
+
+const string = 'test';
+
+for (let znak of string)
+{
+console.log(znak);
+}
+/ t
+/ e
+/ s
+/ t
