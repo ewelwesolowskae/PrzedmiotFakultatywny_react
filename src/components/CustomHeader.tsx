@@ -1,5 +1,4 @@
 import React, { Children } from 'react';
-import logo from '../logo.svg';
 
 
 const CustomHeader: React.FC = ({ children }) => {
